@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MindXtra-Submission</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/submission.css" rel="stylesheet">
+
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+
+  <script>
+    function getParameter(name){
+      let parameters = new URLSearchParams(window.location.search);
+      return parameters.get(name);
+    }
+  </script>
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="../index.html"><img src="../assets/img/logo.png"style="width:50px; height:100px"><span>MindXtra</span></a>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="../index.html">Back to Home</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <div class="container">
+        <div class="row">
+            <div class="section-title"><h1>Submit All the necessary files</h1></div>
+        </div>
+        <div class="row">
+            <h4 style="text-align:center">Please submit all the files mentioned below, otherwise your submission can be rejected</h4>
+        </div>
+        <div class="row input-container">
+            <!--div class="col-xs-12">
+              <label>Product Name / Team Name ( <span style="color: #f00;">required</span> )</label> 
+              <div class="styled-input wide">
+                <input type="text" id="name" required />
+              </div>
+            </div-->
+
+            <hr style="height: 3px; margin-top: 20px; margin-bottom: 20px;">
+
+            <div class="col-xs-12">
+              <p>Upload a verification document to prove that all team members are student of a university / Higher educatinal institute</p>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <label>Member 1 ( <span style="color: #f00;">required</span> )</label> 
+              <div class="styled-input wide">
+                <input type="file" id="m1" name="file_name[]" accept="image/*,.pdf" required />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <label>Member 2</label> 
+              <div class="styled-input">
+                <input type="file" id="m2" name="file_name[]" accept="image/*,.pdf"  />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <label>Member 3</label> 
+              <div class="styled-input">
+                <input type="file" id="m3" name="file_name[]" accept="image/*,.pdf"  />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <label>Member 4</label> 
+              <div class="styled-input">
+                <input type="file" id="m4" name="file_name[]"  accept="image/*,.pdf" />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <label>Member 5</label> 
+              <div class="styled-input">
+                <input type="file" id="m5"  name="file_name[]" accept="image/*,.pdf" />
+              </div>
+            </div>
+
+            <hr style="height: 3px; margin-top: 20px; margin-bottom: 20px;">
+
+            <div class="col-md-6 col-sm-12">
+              <label>Submit your proposal ( <span style="color: #f00;">required</span> )</label> 
+              <div class="styled-input">
+                <input type="file" id="proposal" name="file_name[]" accept=".doc,.pdf , .docx" required />
+              </div>
+            </div>
+
+            <hr style="height: 3px; margin-top: 20px; margin-bottom: 20px;">
+
+            <div class="col-md-6 col-sm-12">
+              <label>Submit your proposal video( <span>Optional</span> )</label> 
+              <div class="styled-input">
+                <input type="file" id="video" name="file_name[]" accept="video/*"/>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="btn-lrg submit-btn" id="upload">Upload Files</div>
+            </div>
+        </div>
+        <div class="row input-container">
+        <div>
+            <progress class="col-lg-12 col-md-12 col-sm-12" value="0" max="100" id="uploader" class="progress">
+        </div>
+      </div>
+
+      <div class="row input-container">
+        <div>
+            <p>Please don't exit from this page until your submission is get success!</p>
+            <p>Wait until you get success message & Thank you for the patience. </p>
+        </div>
+      </div>
+
+        </div>
+    </div>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    
+    <div class="container">
+      <div class="copyright">
+        Proudly Presents By <strong><span>UoM LEOS</span></strong>
+      </div>
+     
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+
+
+  <script type="module">
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDRHrFPZLT6seDNTlGTTZb5tgD0P5Xesa4",
+      authDomain: "mindxtra-f5b7c.firebaseapp.com",
+      databaseURL: "https://mindxtra-f5b7c-default-rtdb.firebaseio.com",
+      projectId: "mindxtra-f5b7c",
+      storageBucket: "mindxtra-f5b7c.appspot.com",
+      messagingSenderId: "492667548033",
+      appId: "1:492667548033:web:8304e80a3f606cfeb1b880"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    import { getStorage, ref,uploadBytes,uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-storage.js";
+
+    const storage = getStorage();
+
+    var imageContainer = [];
+    var uploads=[];
+    var uploader = document.getElementById("uploader")
+    var file_name = document.getElementsByName('file_name[]');
+
+    var m1=document.getElementById("m1");
+    var m2=document.getElementById("m2");
+    var m3=document.getElementById("m3");
+    var m4=document.getElementById("m4");
+    var m5=document.getElementById("m5");
+
+    var proposal=document.getElementById("proposal");
+    var video=document.getElementById("video");
+
+
+    var upload=document.getElementById("upload");
+    
+    var file;
+
+    m1.addEventListener('change', function(e){
+      imageContainer.push(e.target.files[0])
+
+    })
+
+    m2.addEventListener('change', function(e){
+      imageContainer.push(e.target.files[0])
+
+    })
+
+    m3.addEventListener('change', function(e){
+      imageContainer.push(e.target.files[0])
+
+    })
+    m4.addEventListener('change', function(e){
+      imageContainer.push(e.target.files[0])
+
+    })
+    m5.addEventListener('change', function(e){
+      imageContainer.push(e.target.files[0])
+
+    })
+    proposal.addEventListener('change', function(e){
+      imageContainer.push(e.target.files[0])
+
+    })
+    video.addEventListener('change', function(e){
+      imageContainer.push(e.target.files[0])
+
+    })
+
+    upload.addEventListener('click',function(e){
+      var name=getParameter("teamname");
+      if(name!=null){
+        if(imageContainer.length>=2 ){
+      for(var i=0; i<imageContainer.length;i++){
+        var file = imageContainer[i];
+        uploadImageAsPromise(file);
+      }
+    }else{
+      Swal.fire({
+       title: "Warning", 
+       text: "Please fill all the required fields!", 
+       type: "error",
+       background:'#00001a',
+        })
+    }
+  }else{
+    Swal.fire({
+       title: "Warning", 
+       text: "Please fill team details first!", 
+       type: "error",
+       background:'#00001a',
+        })
+      .then(()=>{
+    window.location.href="register-with-team.html";
+      })
+    }
+    })
+
+    var strorage = getStorage();
+
+    //Handle waiting to upload each file using promise
+function uploadImageAsPromise (file,i) {
+  var name=getParameter("teamname");
+        var storageRef = ref(storage,name+"/"+file.name);
+
+        //Upload file
+        const uploadTask = uploadBytesResumable(storageRef, file);
+
+// Register three observers:
+// 1. 'state_changed' observer, called any time the state changes
+// 2. Error observer, called on failure
+// 3. Completion observer, called on successful completion
+uploadTask.on('state_changed', 
+  (snapshot) => {
+    // Observe state change events such as progress, pause, and resume
+    // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+    const progress = snapshot.bytesTransferred / snapshot.totalBytes * 100;
+  }, 
+  (error) => {
+    // Handle unsuccessful uploads
+  }, 
+  () => {
+    // Handle successful uploads on complete
+    // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+    getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+      uploads.push(downloadURL);
+      uploader.value= (uploads.length / imageContainer.length)*100
+      if(uploader.value==100){
+        Swal.fire({
+       title: "Success", 
+       text: "Your submission has been submitted successfully!", 
+       type: "success",
+       background:'#00001a',
+        }).then(()=>{
+          window.location.href='../index.html';
+        })
+      }
+    });
+  }
+);
+
+      /*
+      .then(()=>{
+        Swal.fire({
+       title: "Success", 
+       text: "Your submission has been submitted successfully!", 
+       type: "success"
+        }).then(()=>{
+          window.location.href='index.html';
+        })
+      
+      })*/
+    }
+
+    /*var fileButton = document.getElementById("fileButton");
+    var file;
+    
+    fileButton.addEventListener('change', function(e){
+    file = e.target.files[0];
+    console.log(file.name)
+
+
+    const storageRef = ref(storage, 'Images/'+file.name);
+    uploadBytes(storageRef, file)
+    .then(()=>{
+        Swal.fire({
+  title: 'Error!',
+  text: 'Do you want to continue',
+  icon: 'error',
+  confirmButtonText: 'Cool'
+})
+    })
+  });*/
+
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
