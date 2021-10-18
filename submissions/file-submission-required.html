@@ -28,8 +28,6 @@
   <link href="../assets/css/style.css" rel="stylesheet">
   <link href="../assets/css/submission.css" rel="stylesheet">
 
-  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-  <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
 
   <script>
     function getParameter(name){
@@ -138,7 +136,7 @@
             </div>
 
             <div class="col-xs-12">
-              <div class="btn-lrg submit-btn" id="upload">Upload Files</div>
+              <div class="btn-lrg submit-btn" id="upload">Upload Files & Submit</div>
             </div>
         </div>
         <div class="row input-container">
@@ -194,7 +192,7 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
 
-    import { getStorage, ref,uploadBytes,uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-storage.js";
+    import { getStorage,ref,uploadBytes,uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-storage.js";
 
     const storage = getStorage();
 
@@ -277,7 +275,6 @@
     }
     })
 
-    var strorage = getStorage();
 
     //Handle waiting to upload each file using promise
 function uploadImageAsPromise (file,i) {
@@ -315,7 +312,8 @@ uploadTask.on('state_changed',
         }).then(()=>{
           window.location.href='../index.html';
         })
-      }
+      
+    }
     });
   }
 );

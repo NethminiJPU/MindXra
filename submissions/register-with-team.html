@@ -389,7 +389,7 @@
     
     function InsertData(){
       if(teamname.value!='' && m1name.value!='' && m1email.value!='' && m1contact.value!='' && m1nic.value!=''){
-      set(ref(db,teamname.value),{
+      set(ref(db,"Teams/"+teamname.value),{
           TeamName:teamname.value,
           M1Name:m1name.value,
           M1Contact:m1contact.value,
