@@ -386,9 +386,14 @@
 
 
     var insert= document.getElementById("insert");
+
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var phoneno = /^\d{10}$/;
     
     function InsertData(){
       if(teamname.value!='' && m1name.value!='' && m1email.value!='' && m1contact.value!='' && m1nic.value!=''){
+        if(m1email.value.match(mailformat)){
+         if(m1contact.value.match(phoneno)){
       set(ref(db,"Teams/"+teamname.value),{
           TeamName:teamname.value,
           M1Name:m1name.value,
@@ -433,13 +438,25 @@
       .catch((error)=>{
         alert("Something went Wrong"+error);
       });
+    }else{
+      Swal.fire({
+       title: "Warning", 
+       text: "Please enter a valid contact number!", 
+       type: "error",
+        })
     }
-    else{
+  }else{
+      Swal.fire({
+       title: "Warning", 
+       text: "Please enter a valid email address!", 
+       type: "error",
+        })
+    }
+  }else{
       Swal.fire({
        title: "Warning", 
        text: "Please fill all the required fields!", 
        type: "error",
-       background:'#00001a',
         })
     }
   }

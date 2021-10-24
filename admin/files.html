@@ -219,18 +219,6 @@
       function listFolders(folder){
         folders.push(folder)
 
-        /*const sRef=ref(storage,folder);
-        files[folder]=[];
-        listAll(sRef)
-            .then((res) => {
-                res.items.forEach((fileRef) => {
-                  getDownloadURL(fileRef).then((url)=>{
-                    displayFile(folder,url)
-                  })
-                  
-                  
-                })
-            })*/
       }
 
       function displayFile(folder,file){
@@ -240,34 +228,7 @@
       function displayAllFiles(){
       }
 
-                // All the prefixes under listRef.
-                // You may call listAll() recursively on them.
-               /* listAll(folderRef).then((file)=>{
-                    file.items.forEach((itemRef) => {
-                // All the items under listRef.
-                getDownloadURL(itemRef).then((url)=>{
-                  listfiles(folderRef,url)
-                  //console.log(vurl)
-                }
-               );
-                
-                });
-                })
-                
-                });
-               
-            }).catch((error) => {
-                // Uh-oh, an error occurred!
-            });
-
-
-    }
-
-    function listfiles(folder,url){
-      files[folder._location.path]=url
-      console.log(files)
-    }*/
-
+   
       
     window.onload = function(){
         getAllFiles();
